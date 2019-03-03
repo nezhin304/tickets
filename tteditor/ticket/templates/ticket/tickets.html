@@ -6,10 +6,12 @@
 </head>
 <body>
 
-{% for ticket in all_tickets %}
+{% for ticket in tickets %}
+    <p>
+        {{ ticket.number }}
+        {{ ticket.operator.tgno.name }}
 
-{{ ticket.ticket_number }}
-
+    </p>
 {% endfor %}
 </body>
 </html>
